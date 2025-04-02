@@ -1,10 +1,10 @@
 package net.doorsoverthere.cobblemonareacards;
 
+import net.doorsoverthere.cobblemonareacards.block.ModBlocks;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-//comment moment
 public class CobblemonAreaCards implements ModInitializer {
 	public static final String MOD_ID = "cobblemonareacards";
 
@@ -12,6 +12,6 @@ public class CobblemonAreaCards implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
+		ModBlocks.registerModBlocks();
 	}
 }
