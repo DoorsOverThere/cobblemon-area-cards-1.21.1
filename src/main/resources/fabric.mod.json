@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "cobblemonareacards",
+	"version": "${version}",
+	"name": "Cobblemon Area Cards",
+	"description": "This mod adds pop up cards for towns or routes when entered",
+	"authors": [
+		"DoorsOverThere"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/cobblemonareacards/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.doorsoverthere.cobblemonareacards.CobblemonAreaCards"
+		],
+		"fabric-datagen": [
+			"net.doorsoverthere.cobblemonareacards.CobblemonAreaCardsDataGenerator"
+		],
+		"client": [
+			"net.doorsoverthere.cobblemonareacards.CobblemonAreaCardsClient"
+		]
+	},
+	"mixins": [
+		"cobblemonareacards.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.12",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
