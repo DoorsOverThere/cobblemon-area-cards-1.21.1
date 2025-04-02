@@ -1,6 +1,7 @@
 package net.doorsoverthere.cobblemonareacards.block;
 
 import net.doorsoverthere.cobblemonareacards.CobblemonAreaCards;
+import net.doorsoverthere.cobblemonareacards.block.custom.AreaBlock;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
@@ -13,7 +14,8 @@ import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 
 public class ModBlocks {
-    public static final Block AREA_BLOCK = registerBlock("area_block", new Block(AbstractBlock.Settings.create()
+    public static final Block AREA_BLOCK = registerBlock("area_block", new AreaBlock(AbstractBlock.Settings.create()
+            .nonOpaque()
             .strength(4f)
             .requiresTool()
             .sounds(BlockSoundGroup.STONE)

@@ -1,6 +1,7 @@
 package net.doorsoverthere.cobblemonareacards;
 
 import net.doorsoverthere.cobblemonareacards.block.ModBlocks;
+import net.doorsoverthere.cobblemonareacards.block.entity.ModBlockEntities;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -13,5 +14,7 @@ public class CobblemonAreaCards implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ModBlocks.registerModBlocks();
+
+		ModBlockEntities.RegisterBlockEntities();
 	}
 }
