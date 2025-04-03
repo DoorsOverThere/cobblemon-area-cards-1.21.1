@@ -2,6 +2,7 @@ package net.doorsoverthere.cobblemonareacards;
 
 import net.doorsoverthere.cobblemonareacards.block.ModBlocks;
 import net.doorsoverthere.cobblemonareacards.block.entity.ModBlockEntities;
+import net.doorsoverthere.cobblemonareacards.screen.ModScreenHandlers;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -16,5 +17,6 @@ public class CobblemonAreaCards implements ModInitializer {
 		ModBlocks.registerModBlocks();
 
 		ModBlockEntities.RegisterBlockEntities();
+		ModScreenHandlers.registerScreenHandlers();
 	}
 }
